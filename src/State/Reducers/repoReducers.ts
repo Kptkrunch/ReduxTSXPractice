@@ -7,8 +7,14 @@ interface RepoState {
     data: string[];
 }
 
+const initState = {
+    loading: false,
+    error: null,
+    data: []
+}
+
 const reducer = (
-    state: RepoState,
+    state: RepoState = initState,
     action: Action
 
 ): RepoState => {

@@ -1,15 +1,9 @@
-import {createRoot} from "react-dom/client";
+import { createRoot } from "react-dom/client";
+import ReactDOM from 'react-dom';
+import App from "./Components/App";
 
 const root = createRoot(document.getElementById("root") as HTMLElement);
 
-const App = () => {
-    return (
-        <div>
-            <h1>
-                Hello World!!!
-            </h1>
-        </div>
-    )
-}
-
 root.render(<App />);
+
+// ReactDOM.render(<App />, document.querySelector('#root'));
